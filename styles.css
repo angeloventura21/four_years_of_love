@@ -1,0 +1,278 @@
+body {
+    background-color: #a5f5f8 !important;
+}
+.homebg {
+background-image: url(images/diamond-sunset.png) !important;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.navbar {
+background-color: rgba(255, 255, 255, 0.329) !important;
+}
+.nav-item .nav-link {
+    color: rgb(54, 53, 53) !important;
+    font-weight: bolder;
+}
+.logo{
+    border-radius: 10px !important;
+    box-shadow: 0 0px 16px rgba(0, 0, 0, 0.829);
+}
+.fourth {
+color:rgb(231, 231, 7);
+text-shadow: 10px 8px 7px rgba(0, 0, 0, 0.692);
+}
+.anniversary{
+color:rgb(88, 2, 88);
+text-shadow: 10px 8px 7px rgba(0, 0, 0, 0.692);
+font-weight:bolder;
+}
+.profile-img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
+}
+.header {
+    font-weight: bolder; /* Adjust font size as needed */
+    color:#fff;
+}
+p ,h3 {
+    text-shadow: 2px 2px 5px rgb(2, 2, 2); /* Initial yellow shadow */
+    animation: shadowAnimation 4s infinite, floatAnimation 3s infinite;
+    color: #ffffff; /* Ensure text color contrasts well with shadow */
+    margin-bottom: 0; /* Adjust spacing as needed */
+}
+
+.home-text{
+    text-align: center;
+    margin-top:10px;
+    font-weight: bolder;
+
+}
+#home {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#memories {
+    background-image: url(images/parabolic-ellipse.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.messages{
+    font-weight: bold;
+    color:rgb(87, 255, 233);
+text-shadow: 10px 8px 7px rgba(0, 0, 0, 0.692);
+}
+#messageHome{
+    margin-top:30px;
+    height: auto;
+    text-shadow: 10px 8px 7px rgba(0, 0, 0, 0.692);
+    color:rgb(42, 252, 234);
+}
+
+
+#about {
+    background-image: url(images/sun-tornado.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*message button*/
+.message-section {
+    text-align: center;
+    margin-top: 50px;
+}
+.message-container {
+    display: none; /* Hide message container by default */
+    margin-top: 20px;
+}
+.messages-about{
+    text-align:justify;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.205) !important;
+}
+.memory-item {
+    margin-bottom: 10px;
+}
+
+.memory-img {
+    width: 90%;
+    height: 300px;
+    display: block;
+    border-radius: 20px;
+}
+
+.memory-text {
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin-top: 20px;
+}
+
+.memory-text.expanded {
+    max-height: 500px;
+}
+
+.show-more {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}
+
+.about-img {
+    max-width: 100%;
+    border-radius: 20px;
+    max-height: 60%;
+    animation: shadowAnimation 1s infinite, floatAnimation 3s infinite;
+    display: block;
+}
+.img-div {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically if needed */
+    padding: 0;
+    margin: 0;
+}
+/* Define the animation */
+@keyframes shadowAnimation {
+    0% {
+        filter: drop-shadow(0px 0px 30px rgba(255, 255, 0, 0.7)); /* Yellow shadow at the start */
+    }
+    50% {
+        filter: drop-shadow(0px 0px 30px rgba(128, 0, 128, 0.7)); /* Purple shadow in the middle */
+    }
+    100% {
+        filter: drop-shadow(0px 0px 30px rgba(255, 255, 0, 0.7)); /* Yellow shadow at the end */
+    }
+}
+/* Define the floating animation */
+@keyframes floatAnimation {
+    0% {
+        transform: translateY(0); /* Start position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up */
+    }
+    100% {
+        transform: translateY(0); /* Return to start position */
+    }
+}
+
+@media (max-width: 768px) {
+    .about-img {
+        max-width: 100%;
+    }
+}
+
+.section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.section.visible h2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#downloadvideo {
+    display: none;
+    margin-top: 20px;
+}
+
+.show-video-button {
+    margin-top: 20px;
+}
+
+.confirmation-container {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.confirmation-container input {
+    width: 200px;
+    margin-top: 10px;
+}
+
+.hide-video-button {
+    display: none;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #67b1fc;
+    padding: 30px 0;
+    position: relative;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer .btn-primary {
+    background-color: #071952;
+    border-color: #071952;
+    color: #fff;
+}
+
+.footer .btn-primary:hover {
+    background-color: #05587a;
+    border-color: #05587a;
+}
+.d-inline-flex{
+    display:block !important;
+}
+.icon{
+    margin-top: 5px;
+}
+hr{
+ border-color: #302f2f;
+ width: 70%;
+ margin-bottom: 0px;
+}
+
+.memory-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.memory-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Video section background */
+#video-caption {
+    background-image: url(images/page-turner.png);
+}
+.svg-icon {
+    width: 20px; /* Set the desired size */
+    height: auto;
+    margin: 0 10px; /* Add space between icons */
+}
+.d-inline-flex{
+    padding-top:30px
+}
